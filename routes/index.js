@@ -3,7 +3,6 @@ let router = express.Router();
 
 const booksRouter = require('./books');
 
-
 //use the router object to define the routes for the application
 
 //books routes
