@@ -9,8 +9,8 @@ const BooksController = {
         let data = fs.readFileSync(path.join('data', 'books.json'), 'utf8');
         //parse the data to convert it into an array of objects
         let books = JSON.parse(data);
-        //send the response to the client
-        res.send(books);
+        //render the index view and pass the books data to the view
+        res.render('index', { books, title: 'Bootcamp Book Store' });
     }
 }
 

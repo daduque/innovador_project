@@ -5,7 +5,33 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Book Catalog</h2>
+        <hr>
+        <div class="book-block">
+        <% books.forEach((book) => { %>
+          <article >
+            <img class="book-block__image" src="images/<%= book.cover %>" alt="<%= book.title %> cover" height="200">
+            <h3 class="book-block__title"><%= book.title %></h3>
+            <p class="book-block__info">by <%= book.author %></p>
+            <p class="book-block__price">$<%= book.price %></p>
+          </article>
+        <% }); %>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
   </body>
 </html>
