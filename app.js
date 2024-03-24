@@ -3,6 +3,9 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
+const session = require('express-session');
+const fs = require('fs');
+
 
 const indexRouter = require('./routes/index');
 
@@ -18,12 +21,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+}))
 
-app.use(function (req, res, next) {
-  console.log('Time:', Date.now());
-  next();
-});
+app.use('/', indexRouter);
 
 
 // catch 404 and forward to 404 page

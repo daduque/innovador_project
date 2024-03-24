@@ -1,0 +1,13 @@
+//file system module
+const fs = require('fs');
+//requiere path
+const path = require('path');
+
+const AdminController = {
+    index: (req, res) => {
+        //render the index view and pass the books data to the view
+        res.render('admin', { title: 'Admin Page', user: req.session.user });
+    }
+}
+
+module.exports = AdminController;

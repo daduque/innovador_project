@@ -10,7 +10,7 @@ const BooksController = {
         //parse the data to convert it into an array of objects
         let books = JSON.parse(data);
         //render the index view and pass the books data to the view
-        res.render('index', { books, title: 'Bootcamp Book Store' });
+        res.render('index', { books, title: 'Bootcamp Book Store', user: req.session.user });
     }
 }
 

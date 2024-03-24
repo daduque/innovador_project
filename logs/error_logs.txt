@@ -1,0 +1,19 @@
+24/3/2024 12:29:12 - Error: D:\bootcamp\codigos\innovador\innovador_project\views\index.ejs:4
+    2| <html>
+    3|   <head>
+ >> 4|     <title><%= title %></title>
+    5|     <link rel='stylesheet' href='/stylesheets/style.css' />
+    6|   </head>
+    7|   <body>
+
+title is not defined
+24/3/2024 12:29:43 - Error: D:\bootcamp\codigos\innovador\innovador_project\views\index.ejs:26
+    24|         <hr>
+    25|         <div class="book-block">
+ >> 26|         <% books.forEach((book) => { %>
+    27|           <article >
+    28|             <img class="book-block__image" src="images/<%= book.cover %>" alt="<%= book.title %> cover" height="200">
+    29|             <h3 class="book-block__title"><%= book.title %></h3>
+
+books is not defined
+24/3/2024 12:46:53 - Error: user.rol.conatins is not a function
