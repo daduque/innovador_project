@@ -20,13 +20,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.use(function (req, res, next) {
+  console.log('Time:', Date.now());
+  next();
 });
+
+
+// catch 404 and forward to 404 page
+app.use((req, res, next) => {
+  res.status(404).render('page404', { title: '404: Not Found' });
+  next();
+})
 
 // error handler
 app.use(function(err, req, res, next) {
+  
+  //log the error to the error_log.txt file
+  const message = 'Error: ' + err.message;
+  const dateTime = new Date().toLocaleString();
+  fs.createWriteStream(path.join('logs', 'error_logs.txt'), { flags: 'a' });
+  fs.appendFileSync(path.join('logs', 'error_logs.txt'), dateTime + ' - ' + message + '\n');
+
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
