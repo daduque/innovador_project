@@ -1,0 +1,70 @@
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="/admin">Bookstore Admin</a>
+    
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+  </header>
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky">
+          <ul class="nav flex-column">
+
+
+            <li class="nav-item">
+              <a class="nav-link <%= (locals.active && (locals.active === 'admin'))? 'active': '' %>" href="/admin">
+                <span data-feather="home" class="align-text-bottom"></span>
+                Inicio
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link <%= (locals.active && (locals.active === 'books'))? 'active': '' %>" href="/admin/books">
+                <span class="align-text-bottom"></span>
+                Gestión de Libros
+              </a>
+            </li>
+  
+            <!-- <li class="nav-item">
+              <a class="nav-link <%= (locals.active && (locals.active === 'admins'))? 'active': '' %>" href="/admin/administradores">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Gestión de Administradores
+              </a>
+            </li> -->
+  
+            <!-- <li class="nav-item">
+              <a class="nav-link <%= (locals.active && (locals.active === 'users'))? 'active': '' %>" href="/admin/usuarios">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Gestión de Usuarios
+              </a>
+            </li> -->
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_blank">
+                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                Ir a la Bookstore
+              </a>
+            </li>
+            
+            <li class="nav-item m-4">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              <form action="/logout">
+                  <button class="btn btn-outline-danger w-100" aria-current="page" >
+                    Logout 
+                  </button>
+                </form>
+            </li>
+          </ul>
+  
+  
+        </div>
+      </nav>
+  
+      
+    </div>
+  </div>

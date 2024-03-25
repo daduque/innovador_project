@@ -1,112 +1,123 @@
 [
-    {
-      "title": "The Silent Patient",
-      "author": "Alex Michaelides",
-      "year": "2019",
-      "cover": "silent_patient_cover.webp",
-      "published": "Orion Publishing Co",
-      "quantity": "10",
-      "genre": "Psychological Thriller",
-      "price": "15.99",
-      "synopsis": "Alicia Berenson's life is seemingly perfect. That is until she shoots her husband in the face and never speaks another word."
-    },
-    {
-      "title": "Where the Crawdads Sing",
-      "author": "Delia Owens",
-      "year": "2018",
-      "cover": "where_crawdads_sing_cover.webp",
-      "published": "G.P. Putnam's Sons",
-      "quantity": "10",
-      "genre": "Coming-of-Age Fiction",
-      "price": "12.99",
-      "synopsis": "Kya Clark, known as the Marsh Girl, has survived alone in the marshes of North Carolina for years. But when a murder occurs, she becomes a suspect."
-    },
-    {
-      "title": "Becoming",
-      "author": "Michelle Obama",
-      "year": "2018",
-      "cover": "becoming_cover.webp",
-      "published": "Crown Publishing Group",
-      "quantity": "10",
-      "genre": "Autobiography",
-      "price": "19.99",
-      "synopsis": "Michelle Obama invites readers into her world, chronicling the experiences that have shaped her, from her childhood in Chicago to her time as First Lady of the United States."
-    },
-    {
-      "title": "Educated",
-      "author": "Tara Westover",
-      "year": "2018",
-      "cover": "educated_cover.webp",
-      "published": "Random House",
-      "quantity": "10",
-      "genre": "Memoir",
-      "price": "14.99",
-      "synopsis": "Tara Westover recounts her journey from being raised in a strict and abusive household in rural Idaho to earning a PhD from Cambridge University."
-    },
-    {
-      "title": "The Testaments",
-      "author": "Margaret Atwood",
-      "year": "2019",
-      "cover": "testaments_cover.webp",
-      "published": "Nan A. Talese",
-      "quantity": "10",
-      "genre": "Dystopian Fiction",
-      "price": "17.99",
-      "synopsis": "Set 15 years after the events of The Handmaid's Tale, this novel explores the inner workings of Gilead and the lives of three women."
-    },
-    {
-      "title": "The Institute",
-      "author": "Stephen King",
-      "year": "2019",
-      "cover": "institute_cover.webp",
-      "published": "Scribner",
-      "quantity": "10",
-      "genre": "Horror Fiction",
-      "price": "16.99",
-      "synopsis": "A group of children with special abilities are held captive in an institution where they are subjected to sinister experiments."
-    },
-    {
-      "title": "Normal People",
-      "author": "Sally Rooney",
-      "year": "2018",
-      "cover": "normal_people_cover.webp",
-      "published": "Hogarth Press",
-      "quantity": "10",
-      "genre": "Literary Fiction",
-      "price": "13.99",
-      "synopsis": "The complex relationship between Marianne and Connell unfolds over the course of their school years in a small Irish town."
-    },
-    {
-      "title": "Circe",
-      "author": "Madeline Miller",
-      "year": "2018",
-      "cover": "circe_cover.webp",
-      "published": "Little, Brown and Company",
-      "quantity": "10",
-      "genre": "Mythological Fiction",
-      "price": "11.99",
-      "synopsis": "The story of the mythical witch Circe, who is banished to a deserted island and must find her place in the world of gods and mortals."
-    },
-    {
-      "title": "The Giver of Stars",
-      "author": "Jojo Moyes",
-      "year": "2019",
-      "cover": "giver_of_stars_cover.webp",
-      "published": "Pamela Dorman Books",
-      "quantity": "10",
-      "genre": "Historical Fiction",
-      "price": "15.99",
-      "synopsis": "Set in Depression-era America, five women join a traveling library and embark on a life-changing journey."
-    },
-    {
-      "title": "The Dutch House",
-      "author": "Ann Patchett",
-      "year": "2019",
-      "cover": "dutch_house_cover.webp",
-      "published": "Harper",
-      "quantity": "10",
-      "genre": "Family Saga",
-      "price": "14.99",
-      "synopsis": "The story of a brother and sister, their childhood home, and the bond that carries them through five decades."
-    }
-  ]
+  {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "year": "2019",
+    "cover": "silent_patient_cover.webp",
+    "published": "Orion Publishing Co",
+    "quantity": "10",
+    "genre": "Psychological Thriller",
+    "price": "15.99",
+    "synopsis": "Alicia Berenson's life is seemingly perfect. That is until she shoots her husband in the face and never speaks another word."
+  },
+  {
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "year": "2018",
+    "cover": "where_crawdads_sing_cover.webp",
+    "published": "G.P. Putnam's Sons",
+    "quantity": "10",
+    "genre": "Coming-of-Age Fiction",
+    "price": "12.99",
+    "synopsis": "Kya Clark, known as the Marsh Girl, has survived alone in the marshes of North Carolina for years. But when a murder occurs, she becomes a suspect."
+  },
+  {
+    "title": "Becoming",
+    "author": "Michelle Obama",
+    "year": "2018",
+    "cover": "becoming_cover.webp",
+    "published": "Crown Publishing Group",
+    "quantity": "10",
+    "genre": "Autobiography",
+    "price": "19.99",
+    "synopsis": "Michelle Obama invites readers into her world, chronicling the experiences that have shaped her, from her childhood in Chicago to her time as First Lady of the United States."
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "year": "2018",
+    "cover": "educated_cover.webp",
+    "published": "Random House",
+    "quantity": "10",
+    "genre": "Memoir",
+    "price": "14.99",
+    "synopsis": "Tara Westover recounts her journey from being raised in a strict and abusive household in rural Idaho to earning a PhD from Cambridge University."
+  },
+  {
+    "title": "The Testaments",
+    "author": "Margaret Atwood",
+    "year": "2019",
+    "cover": "testaments_cover.webp",
+    "published": "Nan A. Talese",
+    "quantity": "10",
+    "genre": "Dystopian Fiction",
+    "price": "17.99",
+    "synopsis": "Set 15 years after the events of The Handmaid's Tale, this novel explores the inner workings of Gilead and the lives of three women."
+  },
+  {
+    "title": "The Institute",
+    "author": "Stephen King",
+    "year": "2019",
+    "cover": "institute_cover.webp",
+    "published": "Scribner",
+    "quantity": "10",
+    "genre": "Horror Fiction",
+    "price": "16.99",
+    "synopsis": "A group of children with special abilities are held captive in an institution where they are subjected to sinister experiments."
+  },
+  {
+    "title": "Normal People",
+    "author": "Sally Rooney",
+    "year": "2018",
+    "cover": "normal_people_cover.webp",
+    "published": "Hogarth Press",
+    "quantity": "10",
+    "genre": "Literary Fiction",
+    "price": "13.99",
+    "synopsis": "The complex relationship between Marianne and Connell unfolds over the course of their school years in a small Irish town."
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "year": "2018",
+    "cover": "circe_cover.webp",
+    "published": "Little, Brown and Company",
+    "quantity": "10",
+    "genre": "Mythological Fiction",
+    "price": "11.99",
+    "synopsis": "The story of the mythical witch Circe, who is banished to a deserted island and must find her place in the world of gods and mortals."
+  },
+  {
+    "title": "The Giver of Stars",
+    "author": "Jojo Moyes",
+    "year": "2019",
+    "cover": "giver_of_stars_cover.webp",
+    "published": "Pamela Dorman Books",
+    "quantity": "10",
+    "genre": "Historical Fiction",
+    "price": "15.99",
+    "synopsis": "Set in Depression-era America, five women join a traveling library and embark on a life-changing journey."
+  },
+  {
+    "title": "The Dutch House",
+    "author": "Ann Patchett",
+    "year": "2019",
+    "cover": "dutch_house_cover.webp",
+    "published": "Harper",
+    "quantity": "10",
+    "genre": "Family Saga",
+    "price": "14.99",
+    "synopsis": "The story of a brother and sister, their childhood home, and the bond that carries them through five decades."
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "year": "1965",
+    "cover": "Dune_cover.webp",
+    "published": "Ace Books",
+    "quantity": "10",
+    "genre": "Science Fiction",
+    "price": "10.99",
+    "synopsis": "A complex tale of politics, religion, and interstellar travel."
+  }
+]

@@ -25,7 +25,7 @@
         <div class="book-block">
         <% books.forEach((book) => { %>
           <article >
-            <img class="book-block__image" src="images/<%= book.cover %>" alt="<%= book.title %> cover" height="200">
+            <img class="book-block__image" src="images/books/<%= book.cover %>" alt="<%= book.title %> cover" height="200">
             <h3 class="book-block__title"><%= book.title %></h3>
             <p class="book-block__info">by <%= book.author %></p>
             <p class="book-block__price">$<%= book.price %></p>
