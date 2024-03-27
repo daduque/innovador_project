@@ -1,20 +1,32 @@
 [
-    {
-      "name": "John Doe",
-      "email": "john@example.com",
-      "password": "12345678",
-      "rol": "client"
-    },
-    {
-      "name": "Jane Smith",
-      "email": "jane@example.com",
-      "password": "asdfghjk",
-      "rol": "admin"
-    },
-    {
-      "name": "Robert Johnson",
-      "email": "robert@example.com",
-      "password": "qwertyui",
-      "rol": "editor"
-    }
-  ]
+  {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "$2a$10$rehc7LHIjzZk6GvDzSRMsuQymXv4/K2IylVf3Ij5hLdK2tWpj6I0a",
+    "rol": "client"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "password": "$2a$10$rehc7LHIjzZk6GvDzSRMsuQymXv4/K2IylVf3Ij5hLdK2tWpj6I0a",
+    "rol": "admin"
+  },
+  {
+    "name": "Robert Johnson",
+    "email": "robert@example.com",
+    "password": "$2a$10$rehc7LHIjzZk6GvDzSRMsuQymXv4/K2IylVf3Ij5hLdK2tWpj6I0a",
+    "rol": "editor"
+  },
+  {
+    "name": "Prueba 1",
+    "email": "prueba@prueba.com",
+    "password": "$2a$10$rehc7LHIjzZk6GvDzSRMsuQymXv4/K2IylVf3Ij5hLdK2tWpj6I0a",
+    "rol": "editor"
+  },
+  {
+    "name": "prueba hash",
+    "email": "pruebahash@prueba.com",
+    "password": "$2a$10$rehc7LHIjzZk6GvDzSRMsuQymXv4/K2IylVf3Ij5hLdK2tWpj6I0a",
+    "rol": "client"
+  }
+]

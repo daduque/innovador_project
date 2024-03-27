@@ -39,3 +39,12 @@ typeOf is not defined
 If the above error is not helpful, you may want to try EJS-Lint:
 https://github.com/RyanZim/EJS-Lint
 Or, if you meant to create an async function, pass `async: true` as an option.
+26/3/2024 21:13:53 - Error: D:\bootcamp\codigos\innovador\innovador_project\views\admin\admin-users.ejs:18
+    16|     <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+    17| 
+ >> 18|       <% if (locals.user && local.user.rol === 'admin') { %>
+    19|        
+    20|         <div class="my-3 text-end">
+    21|             <a href="/admin/users/create" class="btn btn-success w-25">Crear Usuario</a>
+
+local is not defined

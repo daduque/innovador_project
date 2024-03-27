@@ -4,6 +4,8 @@
 const fs = require('fs');
 //requiere path
 const path = require('path');
+//bcrypt module
+const bcrypt = require('bcryptjs');
 
 const UserController = {
 
@@ -20,11 +22,13 @@ const UserController = {
         let email = req.body.email;
         let password = req.body.password;
         //find the user with the email and password
-        let user = users.find(user => user.email === email && user.password === password);
-        //if the user is found, save the user in the session and redirect to the home page
-        if (user) {
+        let user = users.find(user => user.email === email);
+        //if the user is found by email, check the password with bcrypt
+        let checkPassword = bcrypt.compareSync(password, user.password);
+        //if checkPassword is true, save the user in the session and redirect to the home page or admin page
+        if (checkPassword) {
             req.session.user = user;
-            user.rol.includes('admin', 'editor') ? res.redirect('/admin') : res.redirect('/');
+            ['admin', 'editor'].includes(user.rol)? res.redirect('/admin') : res.redirect('/');
         } else {
             //if the user is not found, render the login view with an error message
             res.render('login', { title: 'Login', error: 'Invalid email or password' });

@@ -17,7 +17,7 @@
     "cover": "where_crawdads_sing_cover.webp",
     "published": "G.P. Putnam's Sons",
     "quantity": "10",
-    "genre": "Coming-of-Age Fiction",
+    "genre": "Fiction",
     "price": "12.99",
     "synopsis": "Kya Clark, known as the Marsh Girl, has survived alone in the marshes of North Carolina for years. But when a murder occurs, she becomes a suspect."
   },
@@ -50,7 +50,7 @@
     "cover": "testaments_cover.webp",
     "published": "Nan A. Talese",
     "quantity": "10",
-    "genre": "Dystopian Fiction",
+    "genre": "Fiction",
     "price": "17.99",
     "synopsis": "Set 15 years after the events of The Handmaid's Tale, this novel explores the inner workings of Gilead and the lives of three women."
   },
@@ -61,7 +61,7 @@
     "cover": "institute_cover.webp",
     "published": "Scribner",
     "quantity": "10",
-    "genre": "Horror Fiction",
+    "genre": "Fiction",
     "price": "16.99",
     "synopsis": "A group of children with special abilities are held captive in an institution where they are subjected to sinister experiments."
   },
@@ -72,7 +72,7 @@
     "cover": "normal_people_cover.webp",
     "published": "Hogarth Press",
     "quantity": "10",
-    "genre": "Literary Fiction",
+    "genre": "Fiction",
     "price": "13.99",
     "synopsis": "The complex relationship between Marianne and Connell unfolds over the course of their school years in a small Irish town."
   },
@@ -83,7 +83,7 @@
     "cover": "circe_cover.webp",
     "published": "Little, Brown and Company",
     "quantity": "10",
-    "genre": "Mythological Fiction",
+    "genre": "Fiction",
     "price": "11.99",
     "synopsis": "The story of the mythical witch Circe, who is banished to a deserted island and must find her place in the world of gods and mortals."
   },
@@ -94,7 +94,7 @@
     "cover": "giver_of_stars_cover.webp",
     "published": "Pamela Dorman Books",
     "quantity": "10",
-    "genre": "Historical Fiction",
+    "genre": "Fiction",
     "price": "15.99",
     "synopsis": "Set in Depression-era America, five women join a traveling library and embark on a life-changing journey."
   },
@@ -116,7 +116,7 @@
     "cover": "Dune_cover.webp",
     "published": "Ace Books",
     "quantity": "10",
-    "genre": "Science Fiction",
+    "genre": "Fiction",
     "price": "10.99",
     "synopsis": "A complex tale of politics, religion, and interstellar travel."
   }
