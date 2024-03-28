@@ -37,8 +37,8 @@
         </div>
 
         <div class="mb-2">
-            <label for="published" class="form-label">Casa editorial</label>
-            <input type="text" class="form-control form-control-sm" name="published" >
+            <label for="publisher" class="form-label">Casa editorial</label>
+            <input type="text" class="form-control form-control-sm" name="publisher" >
         </div>
 
         <div class="mb-2">
@@ -47,8 +47,13 @@
         </div>
 
         <div class="mb-2">
-            <label for="genre" class="form-label">Género</label>
-            <input type="text" class="form-control form-control-sm" name="genre" >
+          <!-- genre select from genres object -->
+          <select class="form-select" name="genre" id="genre">
+            <option selected disabled>Seleccione un Género</option>
+            <% genres.forEach(genre => { %>
+              <option value="<%= genre.id %>"><%= genre.genre %></option>
+            <% }) %>
+          </select>
         </div>
 
         <div class="mb-2">

@@ -16,28 +16,11 @@
 
   <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5 my-3">
 
-    <form action="/admin/users/create" method="post">
+    <form action="/admin/genres/create" method="post">
         
         <div class="mb-2">
-          <label for="name" class="form-label">Nombre</label>
+          <label for="name" class="form-label">Nombre del Género</label>
           <input type="text" class="form-control form-control-sm" name="name" >
-        </div>
-        <div class="mb-2">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control form-control-sm" name="email" >
-        </div>
-        <div class="mb-2">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control form-control-sm" name="password" >
-        </div>
-
-        <div class="mb-2">
-          <select class="form-select" name="role" id="role">
-            <option selected disabled>Selecciona un rol</option>
-            <option value="client" >Cliente</option>
-            <option value="editor">Editor</option>
-            <option value="admin">Administrador</option>
-          </select>
         </div>
 
         <button type="submit" class="btn btn-success w-100 mt-3">Crear</button>

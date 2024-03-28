@@ -54,3 +54,12 @@ local is not defined
 27/3/2024 21:55:28 - Error: Cannot read properties of undefined (reading 'findOne')
 27/3/2024 21:55:50 - Error: Cannot read properties of undefined (reading 'findOne')
 27/3/2024 21:55:58 - Error: Cannot read properties of undefined (reading 'findOne')
+28/3/2024 14:02:53 - Error: D:\bootcamp\codigos\innovador\innovador_project\views\admin\admin-genres.ejs:34
+    32| 
+    33|           <tbody>
+ >> 34|             <% books.forEach((book, index) => { %>
+    35|               <tr>
+    36|                 <th scope="row"><%= index + 1 %></th>
+    37|                 <td><%= book.genre %></td>
+
+books is not defined

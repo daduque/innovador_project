@@ -1,6 +1,6 @@
 function adminMiddleware (req, res, next){
     if (req.session.user) {
-        if (['admin', 'editor'].includes(req.session.user.rol)) 
+        if (['admin', 'editor'].includes(req.session.user.role)) 
         {
             next()
         }else {

@@ -15,7 +15,7 @@
 
     <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
       <div class="my-3 text-end">
-          <a href="/admin/books/create" class="btn btn-success w-25">Crear Libro</a>
+          <a href="/admin/genres/create" class="btn btn-success w-25">Crear Género</a>
       </div>
 
       
@@ -24,30 +24,16 @@
         <table class="table table-striped" >
           <thead>
             <tr>
-              <th scope="col">#</th>
-                <th scope="col">Título</th>
-                <th scope="col">Autor</th>
+              <th scope="col">ID</th>
                 <th scope="col">Género</th>
-                <th scope="col">Editorial</th>
-                <th scope="col">Año</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Unidades</th>
-                <th scope="col">Sinopsis</th>
             </tr>
           </thead>
 
           <tbody>
-            <% books.forEach((book, index) => { %>
+            <% genres.forEach((genre, index) => { %>
               <tr>
-                <th scope="row"><%= index + 1 %></th>
-                <td><%= book.title %></td>
-                <td><%= book.author %></td>
-                <td><%= book.genre.genre %></td>
-                <td><%= book.publisher %></td>
-                <td><%= book.year %></td>
-                <td><%= book.price %></td>
-                <td><%= book.quantity %></td>
-                <td><%= book.synopsis %></td>
+                <th><%= genre.id %></th>
+                <td><%= genre.genre %></td>
               </tr>
             <% }) %>
 
