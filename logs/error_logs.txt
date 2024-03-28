@@ -48,3 +48,9 @@ Or, if you meant to create an async function, pass `async: true` as an option.
     21|             <a href="/admin/users/create" class="btn btn-success w-25">Crear Usuario</a>
 
 local is not defined
+27/3/2024 21:51:37 - Error: Cannot read properties of undefined (reading 'findOne')
+27/3/2024 21:54:54 - Error: Cannot read properties of undefined (reading 'findOne')
+27/3/2024 21:55:18 - Error: Cannot read properties of undefined (reading 'findOne')
+27/3/2024 21:55:28 - Error: Cannot read properties of undefined (reading 'findOne')
+27/3/2024 21:55:50 - Error: Cannot read properties of undefined (reading 'findOne')
+27/3/2024 21:55:58 - Error: Cannot read properties of undefined (reading 'findOne')
