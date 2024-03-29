@@ -43,6 +43,12 @@ const UserController = {
                 res.render('login', { title: 'Login', error: 'Invalid email or password' });
             }
         });
+    },
+
+    logout: (req, res) => {
+        //destroy the session and redirect to the home page
+        req.session.destroy();
+        res.redirect('/');
     }
 }
 

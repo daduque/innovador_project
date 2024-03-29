@@ -10,4 +10,7 @@ router.get('/login', authMiddleware, UserController.login);
 /* POST users login. */
 router.post('/login', UserController.processLogin);
 
+//logout
+router.get('/logout', UserController.logout);
+
 module.exports = router;
