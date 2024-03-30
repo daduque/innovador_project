@@ -12,11 +12,19 @@
       <% if (locals.user) { %>
        
         <div class="text-end">
-          <form action="/users/logout">
+          <form action="/user/logout">
             <button type="submit" class="btn btn-dark">Logout <%= user.name %></button>
           </form>
         </div>
-      <% } %>
+        <% } else { %>
+          <div class="text-end">
+            <form action="/user/login">
+              <button type="submit" class="btn btn-outline-success">Login</button>
+            </form>
+          </div>
+          
+          <% } %>
+       
 
       <h1><%= title %></h1>
       <p>Welcome to <%= title %></p>

@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
-    "username": "root",
-    "password": 'root',
-    "database": "bookstore_db",
-    "host": "127.0.0.1",
+    "username": "sql10695242",
+    "password": 'p1aUdS4Bn7',
+    "database": "sql10695242",
+    "host": "sql10.freesqldatabase.com",
     "dialect": "mysql"
   },
   "test": {
