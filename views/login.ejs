@@ -19,6 +19,14 @@
             </div>
         <% } %>
 
+        <% if (locals.errors) { %>
+            <div class="alert alert-danger">
+                <% errors.forEach(e => { %>
+                    <p class="my-1"> <%= e.msg %> </p >
+                <% }) %>
+            </div>
+        <% } %>
+
         <div id="errors" hidden class="alert alert-danger">
         </div>
             

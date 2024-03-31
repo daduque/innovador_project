@@ -72,3 +72,4 @@ books is not defined
     26|         <form id="loginForm" method="post" action="/user/login">
 
 error is not defined
+31/3/2024 14:11:44 - Error: errors.errors.array is not a function

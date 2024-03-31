@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 //bcrypt module
 const bcrypt = require('bcryptjs');
+const { validationResult } = require('express-validator');
 //user db model
 const db = require('../database/models');
 
@@ -17,32 +18,38 @@ const UserController = {
 
 
     processLogin: (req, res) => {
-        //get the email and password from the request body
-        let email = req.body.email;
-        let password = req.body.password;
-        //find the user with the email
-        console.log(db.User);
-        db.User.findOne({
-            where: {
-                email: email
-            }
-        }).then(user => {
-            //if the user is found, check the password with bcrypt
-            if (user) {
-                let checkPassword = bcrypt.compareSync(password, user.password);
-                //if checkPassword is true, save the user in the session and redirect to the home page or admin page
-                if (checkPassword) {
-                    req.session.user = user;
-                    ['admin', 'editor'].includes(user.role)? res.redirect('/admin') : res.redirect('/');
+        let errors = validationResult(req);
+
+        console.log(errors);
+        if (!errors.isEmpty()) {
+            return res.render('login', { title: 'Login', errors: errors.errors });
+        }else{
+            //get the email and password from the request body
+            let email = req.body.email;
+            let password = req.body.password;
+            //find the user with the email
+            db.User.findOne({
+                where: {
+                    email: email
+                }
+            }).then(user => {
+                //if the user is found, check the password with bcrypt
+                if (user) {
+                    let checkPassword = bcrypt.compareSync(password, user.password);
+                    //if checkPassword is true, save the user in the session and redirect to the home page or admin page
+                    if (checkPassword) {
+                        req.session.user = user;
+                        ['admin', 'editor'].includes(user.role)? res.redirect('/admin') : res.redirect('/');
+                    } else {
+                        //if the user is not found, render the login view with an error message
+                        res.render('login', { title: 'Login', error: 'Invalid email or password' });
+                    }
                 } else {
                     //if the user is not found, render the login view with an error message
                     res.render('login', { title: 'Login', error: 'Invalid email or password' });
                 }
-            } else {
-                //if the user is not found, render the login view with an error message
-                res.render('login', { title: 'Login', error: 'Invalid email or password' });
-            }
-        });
+            });
+        }
     },
 
     logout: (req, res) => {
