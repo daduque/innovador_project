@@ -63,3 +63,12 @@ local is not defined
     37|                 <td><%= book.genre %></td>
 
 books is not defined
+30/3/2024 22:47:56 - Error: D:\bootcamp\codigos\innovador\innovador_project\views\login.ejs:23
+    21| 
+    22|         <div id="errors" hidden class="alert alert-danger">
+ >> 23|             <span> <%= error %> </span>
+    24|         </div>
+    25|             
+    26|         <form id="loginForm" method="post" action="/user/login">
+
+error is not defined
