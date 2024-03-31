@@ -22,7 +22,7 @@ const UserController = {
 
         console.log(errors);
         if (!errors.isEmpty()) {
-            return res.render('login', { title: 'Login', errors: errors.errors });
+            return res.render('login', { title: 'Login', errors: errors.errors, old: req.body});
         }else{
             //get the email and password from the request body
             let email = req.body.email;
